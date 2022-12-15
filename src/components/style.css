@@ -1,0 +1,11 @@
+
+
+@media screen and (max-width: 768px){
+    .card{
+        min-width: calc(100vw - 20px) !important;
+    }
+    .grid{
+        grid-template-columns: 1fr !important;
+    }
+}
+    
