@@ -16,7 +16,7 @@ export default [
     label: 'Services',
   },
   {
-    path: 'https://mepblog.vercel.app/',
+    path: 'https://sanity-cms-ivory.vercel.app/',
     label: 'Blog',
   },
   
