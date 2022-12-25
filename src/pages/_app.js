@@ -30,7 +30,9 @@ export default function CustomApp({ Component, pageProps }) {
     <Script async src="https://www.googletagmanager.com/gtag/js?id=G-SD43VJXWZS"></Script>
 <Script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
+  function gtag(){
+    dataLayer.push(arguments)
+  }
   gtag('js', new Date());
 
   gtag('config', 'G-SD43VJXWZS');
