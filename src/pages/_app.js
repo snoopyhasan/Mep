@@ -24,9 +24,10 @@ export default function CustomApp({ Component, pageProps }) {
   }, []);
   
   
-  
-
-<Script async src="https://www.googletagmanager.com/gtag/js?id=G-SD43VJXWZS"></Script>
+  return (
+  <>
+    
+    <Script async src="https://www.googletagmanager.com/gtag/js?id=G-SD43VJXWZS"></Script>
 <Script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -34,7 +35,9 @@ export default function CustomApp({ Component, pageProps }) {
 
   gtag('config', 'G-SD43VJXWZS');
 </Script>
+    <Component {...pageProps} />
+    
+    </>
+  )
 
-
-  return <Component {...pageProps} />;
 }
