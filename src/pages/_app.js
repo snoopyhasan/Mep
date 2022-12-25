@@ -25,7 +25,7 @@ export default function CustomApp({ Component, pageProps }) {
   
   
   
-<!-- Google tag (gtag.js) -->
+
 <Script async src="https://www.googletagmanager.com/gtag/js?id=G-SD43VJXWZS"></Script>
 <Script>
   window.dataLayer = window.dataLayer || [];
