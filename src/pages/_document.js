@@ -27,6 +27,23 @@ class CustomDocument extends Document {
           <meta name="HandheldFriendly" content="true" />
           <meta name="MobileOptimized" content="320" />
           <meta name="referrer" content="origin" />
+      
+      <script
+            async
+            src={`https://www.googletagmanager.com/gtag/js?id=G-SD43VJXWZS`}
+          />
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-SD43VJXWZS', {
+              page_path: window.location.pathname,
+            });
+          `,
+            }}
+          />
 
         {/* <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> */}
         </Head>
